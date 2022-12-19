@@ -35,12 +35,15 @@ public class BankAccountFunction {
     // total of the amount of BankAccount operation type Transfer
     public static Float totalAmountOfMoneyTransfer(BankAccount bankAccount) {
 
-        List<Float> totalList = bankAccount.getBankAccountOperationList()
+        List<Float> amountOfMoneyTransferList = bankAccount.getBankAccountOperationList()
                 .stream()
                 .filter(f -> f.getOperationType().equals(BankAccountOpertionEnum.Transfer))
                 .map(BankAccountOperation::getAmount)
                 .collect(Collectors.toList());
         Float total = 0f;
+        for (Float f : amountOfMoneyTransferList) {
+            total += f;
+        }
         return total;
     }
 
