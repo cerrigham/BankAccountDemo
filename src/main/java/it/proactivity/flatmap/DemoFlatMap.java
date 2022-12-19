@@ -49,16 +49,16 @@ public class DemoFlatMap {
 
     public static void main(String[] args) {
 
-        DemoFlatMap obj1 = new DemoFlatMap("Oggetto1", Arrays.asList(1,39,35,9), Arrays.asList("ciao", "come", "va"));
-        DemoFlatMap obj2 = new DemoFlatMap("Oggetto2", Arrays.asList(10,3,5,99), Arrays.asList("como", "comodino", "stai"));
+        DemoFlatMap obj1 = new DemoFlatMap("Oggetto1", Arrays.asList(39,35,3,0), Arrays.asList("ciao", "come", "va"));
+        DemoFlatMap obj2 = new DemoFlatMap("Oggetto2", Arrays.asList(99,5,4,1), Arrays.asList("como", "comodino", "stai"));
         DemoFlatMap obj3 = new DemoFlatMap("Oggetto3", Arrays.asList(19,19,75,8), Arrays.asList("cane", "gatto"));
         DemoFlatMap obj4 = new DemoFlatMap("Oggetto4", Arrays.asList(20,31,36,24), Arrays.asList("ciambella", "pollo", "cipolle", "aglio"));
-        DemoFlatMap obj5 = new DemoFlatMap("Oggetto5", Arrays.asList(123,12,5,44), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
+        DemoFlatMap obj5 = new DemoFlatMap("Oggetto5", Arrays.asList(123,55,44), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
 
         DemoFlatMap obj6 = new DemoFlatMap("Oggetto6", Arrays.asList(123,125,6665,4434), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
         DemoFlatMap obj7 = new DemoFlatMap("Oggetto7", Arrays.asList(1,12,5,44), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
         DemoFlatMap obj8 = new DemoFlatMap("Oggetto8", Arrays.asList(1231,112,1115,11144), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
-        DemoFlatMap obj9 = new DemoFlatMap("Oggetto9", Arrays.asList(1203,102,50,4400), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
+        DemoFlatMap obj9 = new DemoFlatMap("Oggetto9", Arrays.asList(120399,1092,5099,440), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
         DemoFlatMap obj10 = new DemoFlatMap("Oggetto10", Arrays.asList(100023,100002,50000,44000), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
         DemoFlatMap obj11 = new DemoFlatMap("Oggetto11", Arrays.asList(1,0,5,4), Arrays.asList("cosmologia", "oroscopo", "osmosi"));
 
@@ -98,6 +98,10 @@ public class DemoFlatMap {
         }
         */
     }
+
+    // Esercizi
+    // sommare tutti gli elementi della lista di array se e solo tutti i valori della lista sono maggiorni di 1000
+    // fare la differenza di tutti gli elementi della lista se e solo se tutti gli elementi della lista sono in ordine decrescente
 }
 
 
