@@ -1,8 +1,6 @@
 package it.proactivity.flatmap;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class DemoFlatMap {
@@ -97,6 +95,20 @@ public class DemoFlatMap {
             System.out.println(s1);
         }
         */
+
+        boolean sommaMaggioreDi1000 = demoFlatMaps
+                .stream()
+                .map(i -> i.getIntegers())
+                .flatMap(List::stream)
+                .allMatch(x -> x > 1000);
+
+
+
+        boolean differenzaSoloSeDecrescente = demoFlatMaps
+                .stream()
+                .map(i -> i.getIntegers())
+                .flatMap(List::stream)
+                .allMatch(Collections.reverseOrder());
     }
 
     // Esercizi
